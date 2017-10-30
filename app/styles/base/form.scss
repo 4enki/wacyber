@@ -1,0 +1,83 @@
+*::placeholder {
+  color: $PlaceholderColor;
+  opacity: 1;
+}
+
+*::placeholder-shown {
+  color: $PlaceholderColor;
+}
+
+::selection {
+  background: $SelectBackground;
+  color: $SelectColor;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  font-family: $GeneralFontFamily;
+}
+
+input[placeholder],
+input:placeholder {
+  text-overflow: ellipsis;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-group {
+  margin-right: 40px;
+  position: relative;
+}
+
+.form-control {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  background-image: none;
+  height: 40px;
+  display: block;
+  width: 100%;
+  min-width: 240px;
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  padding: 9px 14px 9px 18px;
+  -webkit-padding-start: 18px; /* sass-lint:disable-line no-vendor-prefixes */
+  box-sizing: border-box;
+  vertical-align: middle;
+  //transition: border-color ease-in-out .15s;
+
+  &:disabled,
+  &[readonly] {
+    color: rgb(46, 49, 51);
+    background-color: rgb(242, 246, 247);
+    border-color: rgb(214, 218, 221);
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    border-color: rgb(255, 255, 255);
+  }
+
+  &:focus,
+  &.focus {
+    border-color: rgb(255, 255, 255);
+  }
+}
+
+.form-control-label {
+  color: rgb(156, 162, 166);
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
