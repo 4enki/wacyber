@@ -74,6 +74,11 @@
   align-content: center;
   justify-content: space-between;
   position: relative;
+  transition: all .3s ease;
+
+  &:hover {
+    transform: scale(1.32);
+  }
 
   &_box {
     width: 100%;
