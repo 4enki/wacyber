@@ -38,11 +38,11 @@ input:placeholder {
     position: relative;
 
     .form-control {
-      border-color: rgb(252, 47, 47);
-      color: rgb(252, 47, 47);
+      border-color: rgba(248, 96, 101,.85);
+      color: rgb(255, 255, 255);
 
       &:focus {
-        border-color: rgb(252, 47, 47);
+        border-color: rgba(248, 96, 101,.85);
       }
     }
   }
@@ -98,15 +98,16 @@ input:placeholder {
 
 .bubble {
   position: absolute;
-  background-color: #fff;
-  border: 1px solid #d6dadd;
+  background-color: rgba(248, 96, 101, 1);
+  border: 1px solid rgba(248, 96, 101, .85);
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  min-width: 140px;
-  min-height: 80px;
+  min-width: 220px;
+  min-height: 42px;
   left: calc(100% + 15px);
   top: 0;
   z-index: 100;
+  transform: none;
 
   &.big {
     min-width: 290px;
@@ -114,12 +115,12 @@ input:placeholder {
   }
 
   &__text {
-    color: #83868b;
+    color: #fff;
     font-family: Arial;
     font-size: 14px;
     font-weight: 400;
-    line-height: 20px;
-    padding: 14px 15px 15px 15px;
+    line-height: 14px;
+    padding: 11px 12px 10px 12px;
   }
 
   &__actions {
@@ -141,13 +142,13 @@ input:placeholder {
     }
 
     &:before {
-      border-color: transparent #d6dadd transparent transparent;
+      border-color: transparent rgba(248,96,101,.85) transparent transparent;
       left: -6px;
     }
 
     &:after {
 
-      border-color: transparent #fff transparent transparent;
+      border-color: transparent rgba(248,96,101,.85) transparent transparent;
       left: -5px;
     }
   }
