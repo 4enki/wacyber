@@ -45,6 +45,10 @@ input:placeholder {
         border-color: rgba(248, 96, 101,.85);
       }
     }
+
+    .bubble {
+      display: block;
+    }
   }
 }
 
@@ -108,6 +112,7 @@ input:placeholder {
   top: 0;
   z-index: 100;
   transform: none;
+  display: none;
 
   &.big {
     min-width: 290px;
