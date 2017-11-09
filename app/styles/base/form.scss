@@ -26,13 +26,21 @@ input:placeholder {
 
 .form-inline {
   display: flex;
-  flex-flow: row wrap;
   align-items: center;
+
+  @media #{$sm} {
+    flex-direction: column;
+  }
 }
 
 .form-group {
   margin-right: 40px;
   position: relative;
+
+  @media #{$sm} {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 
   &--error {
     position: relative;
@@ -88,6 +96,7 @@ input:placeholder {
   &.focus {
     border-color: rgb(255, 255, 255);
   }
+
 }
 
 .form-control-label {

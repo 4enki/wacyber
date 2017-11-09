@@ -12,6 +12,6 @@ $SelectColor:       rgb(255, 255, 255);
 
 $PlaceholderColor:  rgba(255, 255, 255, .5);
 
-$sm: "only screen and (min-width: 48em)";
+$sm: "only screen and (min-width : 100px) and (max-width : 999px)";
 $md: "only screen and (min-width: 64em)";
 $lg: "only screen and (min-width: 75em)";
