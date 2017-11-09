@@ -38,11 +38,11 @@ input:placeholder {
     position: relative;
 
     .form-control {
-      border-color: rgba(248, 96, 101,.85);
+      border-color: rgba(248, 96, 101, .85);
       color: rgb(255, 255, 255);
 
       &:focus {
-        border-color: rgba(248, 96, 101,.85);
+        border-color: rgba(248, 96, 101, .85);
       }
     }
 
@@ -147,13 +147,13 @@ input:placeholder {
     }
 
     &:before {
-      border-color: transparent rgba(248,96,101,.85) transparent transparent;
+      border-color: transparent rgba(248, 96, 101, .85) transparent transparent;
       left: -6px;
     }
 
     &:after {
 
-      border-color: transparent rgba(248,96,101,.85) transparent transparent;
+      border-color: transparent rgba(248, 96, 101, .85) transparent transparent;
       left: -5px;
     }
   }
